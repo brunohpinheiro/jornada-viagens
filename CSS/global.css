@@ -27,6 +27,7 @@
 body,
 img,
 h1,
+h3,
 p,
 fieldset,
 legend,
@@ -42,4 +43,50 @@ button {
 
 body {
   font-family: "Montserrat";
+  color: var(--text-primary-color);
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0;
+  color: var(--text-primary-color);
+  text-align: center;
+}
+
+.section-title hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px auto 32px;
+}
+
+.button {
+  display: inline-block;
+  width: 280px;
+  height: 64px;
+  color: var(--text-secondary-color);
+  font-size: 20px;
+  font-weight: var(--title-weight);
+  background-color: var(--button-secondary-color);
+  border-radius: 16px;
+  border: none;
+  text-decoration: none;
+  line-height: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--button-primary-color);
+  }
+  .section-title hr {
+    margin: 16px auto 64px;
+  }
 }
