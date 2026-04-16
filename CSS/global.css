@@ -46,6 +46,11 @@ body {
   color: var(--text-primary-color);
 }
 
+.section-title {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .section-title h2 {
   font-size: 28px;
   font-weight: var(--title-weight);
@@ -62,9 +67,19 @@ body {
   margin: 16px auto 32px;
 }
 
+section {
+  width: 312px;
+  margin: 0 auto 88px;
+}
+
+section.hero {
+  width: 100%;
+  margin: 0;
+}
+
 .button {
   display: inline-block;
-  width: 280px;
+  min-width: 280px;
   height: 64px;
   color: var(--text-secondary-color);
   font-size: 20px;
@@ -74,19 +89,36 @@ body {
   border: none;
   text-decoration: none;
   line-height: 64px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
+  .section-title {
+    width: 100%;
+  }
   .section-title h2 {
     font-size: 32px;
+  }
+  section {
+    width: 648px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  section {
+    width: 900px;
+  }
+
   .button:hover {
     background-color: var(--button-primary-color);
   }
   .section-title hr {
     margin: 16px auto 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    width: 1200px;
   }
 }
